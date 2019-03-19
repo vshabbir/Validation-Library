@@ -1,0 +1,61 @@
+Validator JS Developer Guide
+
+About 
+Validator js is a javascript + jquery library developed for form validation.It is a super easy library to use with number of different validation rules.
+
+Why use validator js?
+1 - It is a super easy library to implement,which can be embeded directly into your html tags code just like the default html 5 validation.
+You heard it right,no javascript code required for basic validation.
+
+2 - Ever wanted a validation which cannot be altered?
+If yes,then this is the perfect library for your need.Rules and validation once applied using validator js cannot be manipulated using the dom.
+
+3 - Number of different validation rules which will help you accomplish your client side validation with just one line.
+
+Requirements - 
+- JQuery
+
+Set of validation rules available - 
+
+
+required - specify if a field is required
+syntax - rules="required"
+
+number - validate a digit.No special characters,only allows dot.
+syntax - rules="number"
+
+email - validate if the input is a valid email
+syntax - rules="email"
+
+url - validate if the input is a valid url
+syntax - rules="url"
+
+min - set minimum value for a input
+syntax - rules="min[int|function_name|field_name]"
+
+max - set maximum value for a input
+syntax - rules="max[int|function_name|field_name]"
+
+min_length - set minimum length for a input
+syntax - rules="min_length[int|function_name|field_name]"
+
+max_length - set maximum length for a input
+syntax - rules="max_length[int|function_name|field_name]"
+
+same - validate if the value is same as the field specified.Returns true if value matches
+syntax - rules="same[name_of_field_check]"
+
+notequal - validate if the value is same as the field specified.Return false if value is the same
+syntax - rules="notequal[name_of_field_check]"
+
+requiredif - set the field as required if a certain field is filled
+syntax - rules="requiredif[name_of_field_check]"
+
+notrequiredif - set if the field is not required based on a certain field
+syntax - rules="notrequiredif[name_of_field_check]"
+
+date - validate if the input is a valid date
+syntax - rules="date[format]"
+formats - ymd , mdy , dmy
+
+
