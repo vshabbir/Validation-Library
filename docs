@@ -21,6 +21,12 @@ Set of validation rules available -
 required - specify if a field is required
 syntax - rules="required"
 
+alpha - check if a input is a valid alpha.Can contain only characters.No numbers or special characters
+syntax - rules="alpha"
+
+alphanumeric - check if a input is alpha-numeric.Can contain characters and numbers.No special characters
+syntax - rules="alphanumeric"
+
 number - validate a digit.No special characters,only allows dot.
 syntax - rules="number"
 
@@ -58,4 +64,30 @@ date - validate if the input is a valid date
 syntax - rules="date[format]"
 formats - ymd , mdy , dmy
 
+visa - validate if the input contains a valid visa card number
+syntax - rules="visa"
 
+mastercard - validate if the input contains a valid master card number
+syntax - rules="mastercard"
+
+americanexp - validate if the input contains a valid american express card number
+syntax - rules="americanexp"
+
+aadhar_card - validate if the input is a valid aadhar card number
+syntax - rules="aadhar_card"
+
+pan_card - validate if the input is a valid pan card number
+syntax - rules="pan_card"
+
+time - validate if the input is a valid time format
+syntax - rules="time[format]"
+formats - H:m:s , h:m:s , H:m , h:m
+
+username - validates if the input is a valid username.Username must contain atleast 2 characters,can contain numbers and some special characters (which are globally used in usernames like underscore).
+syntax - rules="username"
+
+mobile - validate if a given input is a mobile number
+syntax - rules="mobile|mobile[max]|mobile[min,max]"
+
+password - checks if the password is a strong password.Checks for uppercase,lowercase,number and special characters in the input.
+syntax - rules="password|password[no_of_lower_case,no_of_upper_case,no_of_integers,no_of_special_characters]"
