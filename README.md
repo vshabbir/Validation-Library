@@ -32,7 +32,7 @@ Adding required and email validation for a form
   <form>
     <div>
       <label>Email Id</label>
-      <input type="text" name="email" rules="required email" />
+      input type="text" name="email" rules="required email"       ==> when using in html file please add the tags
     </div>
   </form>
   <script src="jquery-file.js"></script>
