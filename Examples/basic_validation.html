@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--Basic form validation-->
+    <form id="basic" onsubmit="return validateForm('basic')">
+        <div>
+            <label>
+                Name
+            </label>
+            <input type="text" name="name" rules="required">
+        </div>
+        <div>
+            <label>
+                Email
+            </label>
+            <input type="email" name="email" rules="required email">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>

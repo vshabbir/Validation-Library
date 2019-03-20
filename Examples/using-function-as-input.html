@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using Functions As Inputs</title>
+</head>
+<body>
+    <h1>Using Min Max Functions By Providing function as inputs</h1>
+    <p>
+        Lets take an example.
+        You have a value which is being calculate in a js script and then has to be assigned to the input element.
+    </p>
+    <p>In this situation you can use the function binding feature of the library.</p>
+    <p>There are certain rules which takes functions as input.</p>
+    <p>For set of rules which accepts functions, please refer the rules guide</p>
+    <p>
+        Minimum bid amount is calculate from a function named min_value and Maximum is calculated from max_value
+    </p>
+    <p><b>Try changing values in the below functions (min_value and max_value)</b></p>
+    <form id="min_max" onsubmit="return validateForm('min_max')">
+        <div>
+            <label>
+                Bid Amount From
+            </label>
+            <input type="text" name="bid_from" rules="min[min_value]">
+        </div>
+        <div>
+            <label>
+                Bid Amount To
+            </label>
+            <input type="text" name="bid_to" rules="max[max_value]">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function min_value() {
+            return 2 * 10;
+        }
+
+        function max_value() {
+            return 10 * 10;
+        }
+    </script>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>

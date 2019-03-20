@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validating Min And Max</title>
+</head>
+<body>
+    <h1>Basic Min Max Validation</h1>
+    <p>
+        Minimum value for Bid Amount from is set to 10 and maximum for Bid Amount To is set to 100
+    </p>
+    <p><b>Try changing values in the fields</b></p>
+    <form id="min_max" onsubmit="return validateForm('min_max')">
+        <div>
+            <label>
+                Bid Amount From
+            </label>
+            <input type="text" name="bid_from" rules="min[10]">
+        </div>
+        <div>
+            <label>
+                Bid Amount To
+            </label>
+            <input type="text" name="bid_to" rules="max[100]">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <h1>Min Max Validation Using A Field Value</h1>
+    <p>
+        In th below example the maximum coins to bid is set based on the field named "max_coins" which is 200
+    </p>
+    <p><b>Try changing the value in maximum coins</b></p>
+    <form id="min_max_using_field" onsubmit="return validateForm('min_max_using_field')">
+        <div>
+            <label>Maximum Coins</label>
+            <input type="text" name="max_coins" value="200">
+        </div>
+        <div>
+            <label>
+                Bid Amount From
+            </label>
+            <input type="text" name="bid_from_field" rules="min[10]">
+        </div>
+        <div>
+            <label>
+                Bid Amount To
+            </label>
+            <input type="text" name="bid_to_field" rules="max[max_coins]">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>
