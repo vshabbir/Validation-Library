@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Error Messages</title>
+</head>
+<body>
+    <form id="custom_messages" onsubmit="return validateForm('custom_messages')">
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" rules="required email">
+        </div>
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+    <script>
+        messages(
+            {
+                'form': 'custom_messages',
+                'messages': [
+                    {
+                        'for': 'email',
+                        'rule': ['email'],
+                        'msg': ['Enter a valid email.For ex: test@gmail.com']
+                    }
+                ]
+            }
+        )
+    </script>
+</body>
+</html>
