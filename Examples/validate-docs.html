@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="form" onsubmit="return validateForm('form')">
+        <div>
+            <label>Aadhar Card</label>
+            <input type="text" name="aadhar" rules="aadhar_card">
+        </div>
+        <div>
+            <label>Pancard</label>
+            <input type="text" name="pan" rules="pan_card">
+        </div>
+        <input type="submit" name="" value="Submit">
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>

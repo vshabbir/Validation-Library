@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="form" onsubmit="return validateForm('form')">
+        <div>
+            <label>Visa</label>
+            <input type="text" name="visa" rules="visa">
+        </div>
+        <div>
+            <label>Mastercard</label>
+            <input type="text" name="master" rules="mastercard">
+        </div>
+        <div>
+            <label>Mastercard</label>
+            <input type="text" name="american" rules="americanexp">
+        </div>
+        <input type="submit" name="" value="Submit">
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>

@@ -10,6 +10,10 @@
             <label>Email</label>
             <input type="text" name="email" rules="required email">
         </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" rules="required">
+        </div>
     </form>
     <script src="../jquery-2.1.4.js"></script>
     <script src="../validator.min.js"></script>
@@ -22,6 +26,11 @@
                         'for': 'email',
                         'rule': ['email'],
                         'msg': ['Enter a valid email.For ex: test@gmail.com']
+                    },
+                    {
+                        'for': 'password',
+                        'rule': ['required'],
+                        'msg': ['Please enter a password']
                     }
                 ]
             }

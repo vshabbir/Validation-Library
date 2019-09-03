@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="form" onsubmit="return validateForm('form')">
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" rules="notrequiredif[mobile]">
+        </div>
+        <div>
+            <label>Mobile No</label>
+            <input type="text" name="mobile" rules="notrequiredif[email] mobile">
+        </div>
+        <div>
+            <label>Retype Email</label>
+            <input type="text" name="email1" rules="requiredif[email]">
+        </div>
+        <input type="submit" name="" value="Submit">
+    </form>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../validator.min.js"></script>
+</body>
+</html>
